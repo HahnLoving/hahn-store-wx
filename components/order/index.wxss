@@ -1,0 +1,41 @@
+.container{
+    width: 750rpx;
+}
+
+/* 卡片样式 */
+.card {
+    margin: 10rpx auto !important;
+    margin-top: 25rpx !important;
+}
+
+.right-card {
+    height: 180rpx !important;
+    width: 220rpx !important;
+    border-radius: 12rpx !important;
+}
+
+.right-title-card {
+    font-weight: bold !important;
+}
+
+.content1 {
+    margin-top: 10rpx;
+    color: #666;
+    font-size: 26rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+
+.content2 {
+    margin-top: 50rpx;
+    color: #666;
+    font-size: 26rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}

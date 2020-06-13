@@ -1,0 +1,153 @@
+<!--components/home/index.wxml-->
+<scroll-view scroll-y>
+
+</scroll-view>
+<view class="container" >
+    <view class="top">
+        <image class="header" src="/images/background-imag.jpeg"></image>
+        <view class="header-shaow"></view>
+        <view class="header-box">
+            <view class="address">
+                <l-icon name="address" color="#ffffff"/>
+                <text>地址</text>
+            </view>
+
+            <view class="custom" bindtap="loginTap">
+                <view class="box">
+                    <view class="person">你好</view>
+                    <view class="message">登录可查看信息></view>
+                </view>
+
+                <view class="login">
+                    <view class="login-text">一键登录</view>
+                </view>
+
+                <l-button open-type="getUserInfo" open-type="share" bind:getuserinfo="getUserInfo" shape="semicircle"
+                          l-class="login-btn"></l-button>
+            </view>
+
+        </view>
+
+        <view class="operation-box">
+            <view class="box">
+                <view class="left" bindtap="selectFood">
+
+                    <view class="icon-box">
+                        <l-icon size="80" l-class='icon-self' name="tiqian" color="#166546"/>
+                    </view>
+
+                    <view class="text-box">
+                        <view class="top">
+                            <view>提前选菜</view>
+                        </view>
+                        <view class="bottom">
+                            <view>到店后一键下单</view>
+                        </view>
+                    </view>
+
+                </view>
+                <view class="right" bindtap="scanCodeFood">
+
+                    <view class="text-box">
+                        <view class="top">
+                            <view>扫码点餐</view>
+                        </view>
+                        <view class="bottom">
+                            <view>扫码餐桌二维码</view>
+                        </view>
+                    </view>
+
+                    <view class="icon-box">
+                        <l-icon size="60" l-class='icon-self' name="saoma" color="#166546"/>
+                    </view>
+
+                </view>
+            </view>
+            <view class="box">
+                <view class="left" bindtap="personGetFood">
+
+                    <view class="icon-box">
+                        <l-icon size="60" l-class='icon-self' name="daodian" color="#166546"/>
+                    </view>
+
+                    <view class="text-box">
+                        <view class="top">
+                            <view>到店自取</view>
+                        </view>
+                        <view class="bottom">
+                            <view>指定时间到店取餐</view>
+                        </view>
+                    </view>
+
+                </view>
+                <view class="right" bindtap="takeOutFood">
+
+                    <view class="text-box">
+                        <view class="top">
+                            <view>外卖点餐</view>
+                        </view>
+                        <view class="bottom">
+                            <view>下单送货上门</view>
+                        </view>
+                    </view>
+
+                    <view class="icon-box">
+                        <l-icon size="60" l-class='icon-self' name="waimai" color="#166546"/>
+                    </view>
+
+                </view>
+            </view>
+            <view class="line"></view>
+            <view class="line1"></view>
+        </view>
+
+    </view>
+
+    <view class="content">
+
+        <swiper
+                class="swiper"
+                indicator-dots
+                indicator-active-color="#157658"
+                autoplay
+                circular
+        >
+            <block wx:for="{{ banner }}" wx:key="index">
+                <swiper-item>
+                    <image bindtap="bannerTap" class="swiper" src="{{ item }}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+
+        <view class="title">店铺地址</view>
+
+        <l-card type="primary" l-class="card" l-img-class="right-card" position="right"
+                l-title-class="right-title-card" bindtap="addressTap"
+                image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549711458710&di=e4af10c03585ed60f2b51bc61393cef8&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2Fbizi%2Fdesktop%2F1410%2FA2_1.jpg"
+                title="离我最近的餐厅">
+            <view class="content1">
+                最近的店铺
+            </view>
+            <view class="content2">
+                附近门店>
+            </view>
+        </l-card>
+
+        <view class="title">吃货福利</view>
+
+        <block wx:for="{{ banner }}" wx:key="index">
+            <l-card type="primary" l-class="card" l-img-class="right-card" position="left"
+                    l-title-class="right-title-card" bindtap="activityTap"
+                    image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549711458710&di=e4af10c03585ed60f2b51bc61393cef8&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2Fbizi%2Fdesktop%2F1410%2FA2_1.jpg"
+                    title="优惠与活动">
+                <view class="content1">
+                    活动简介
+                </view>
+            </l-card>
+        </block>
+
+
+    </view>
+
+
+</view>

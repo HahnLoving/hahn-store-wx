@@ -1,0 +1,28 @@
+<!--index.wxml-->
+
+<l-loading color="#166546"></l-loading>
+<view class="container" >
+
+    <view class="box" wx:if="{{config.selected == 0}}">
+        <z-home></z-home>
+    </view>
+    <view class="box" wx:elif="{{config.selected == 1}}">
+        <z-order></z-order>
+    </view>
+    <view class="box" wx:elif="{{config.selected == 2}}">
+        <z-person></z-person>
+    </view>
+
+<!--    <l-button type="default" style="padding-bottom: 1000rpx" bindtap="bindViewTap">default</l-button>-->
+</view>
+
+<view class='tabbar-wrapper'>
+    <l-tabbar
+            bindlintap="onlintap"
+            position="custom"
+            color="{{config.color}}"
+            selected-color="{{config.selectedColor}}"
+            border-style="{{config.borderStyle}}"
+            backgroundColor="{{config.backgroundColor}}"
+            list="{{config.list}}"/>
+</view>

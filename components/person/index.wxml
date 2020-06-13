@@ -1,0 +1,56 @@
+<!--components/home/index.wxml-->
+<view class="container">
+    <view class="top">
+        <image class="header" src="/images/background-imag.jpeg"></image>
+        <view class="header-shaow"></view>
+
+        <view class="operation-box">
+            <view class="person-box" bindtap="avatarTap">
+                <image class="avatar" src="/images/background-imag.jpeg"></image>
+
+                <view class="message">
+                    <view class="top">
+                        <view>name</view>
+                    </view>
+                    <view class="bottom">
+                        <view>vip ></view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="bottom-box">
+                <l-grid rowNum="2">
+                    <l-grid-item key="one" slot="one" bindtap="counpTap">
+                        <view class="num">3</view>
+                        <view class="text">优惠券</view>
+                    </l-grid-item>
+                    <l-grid-item key="two" slot="two" bindtap="integralTap">
+                        <view class="num">134</view>
+                        <view class="text">积分</view>
+                    </l-grid-item>
+                </l-grid>
+            </view>
+
+
+            <view class="line"></view>
+        </view>
+
+
+    </view>
+
+    <view class="content">
+
+        <l-card type="primary"
+                image="" plaintext="false"
+                title="">
+
+            <l-list bindtap="catlTap" title="购物车" icon="order" l-icon-class="icon"/>
+            <l-list bindtap="orderTap" title="收货地址" icon="address" l-icon-class="icon"/>
+            <l-list bindtap="vipTap" title="会员" icon="user" l-icon-class="icon"/>
+
+        </l-card>
+
+
+    </view>
+
+</view>

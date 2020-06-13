@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/demo/demo",
+    "pages/web/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "l-button": "/miniprogram_npm/lin-ui/button/index",
+    "l-tabbar": "/miniprogram_npm/lin-ui/custom-tab-bar/index",
+    "l-icon":  "/miniprogram_npm/lin-ui/icon/index",
+    "l-card": "/miniprogram_npm/lin-ui/card/index",
+    "l-loading": "/miniprogram_npm/lin-ui/loading/index",
+    "l-grid": "/miniprogram_npm/lin-ui/grid/index",
+    "l-grid-item": "/miniprogram_npm/lin-ui/grid-item/index",
+    "l-list": "/miniprogram_npm/lin-ui/list/index",
+
+    "z-navigation": "/components/navigation/index",
+    "z-home": "/components/home/index",
+    "z-order": "/components/order/index",
+    "z-person": "/components/person/index"
+  },
+  "resizable": true
+}

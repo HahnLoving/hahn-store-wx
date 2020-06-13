@@ -1,0 +1,19 @@
+
+<view class="container">
+    <z-navigation id="navigationBar" placeholderBg="" color="{{color}}" title="{{title}}" back="{{true}}"
+                  background="{{barBg}}" fixed="{{fixed}}" backConfirm="{{backConfirm}}" backStyle="{{backStyle}}"
+                  backEvent="{{backEvent}}" bind:back="backEvent" backHomeEvent="{{backHomeEvent}}"
+                  bind:backHome="backHomeEvent"></z-navigation>
+
+    <block wx:for="{{ banner }}" wx:key="index">
+        <l-card type="primary" l-class="card" l-img-class="right-card" position="left"
+                l-title-class="right-title-card" bindtap="orderTap"
+                image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549711458710&di=e4af10c03585ed60f2b51bc61393cef8&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2Fbizi%2Fdesktop%2F1410%2FA2_1.jpg"
+                title="优惠与活动">
+            <view class="content1">
+                活动简介
+            </view>
+        </l-card>
+    </block>
+
+</view>
