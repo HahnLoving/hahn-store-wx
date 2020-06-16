@@ -38,6 +38,10 @@
   content: "\e613";
 }
 
+.l-icon-address:before {
+  content: "\e613";
+}
+
 .l-icon-tiqian:before{
   content: "\e624";
 }

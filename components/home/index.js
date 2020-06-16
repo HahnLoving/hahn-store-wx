@@ -30,7 +30,7 @@ Component({
         // 提前选菜
         selectFood(){
             wx.navigateTo({
-                url: `/pages/demo/demo`
+                url: `/pages/commodit/index?type=tiqian`
             })
         },
 
@@ -46,14 +46,14 @@ Component({
         // 到店自取
         personGetFood(){
             wx.navigateTo({
-                url: `/pages/demo/demo`
+                url: `/pages/commodit/index?type=daodian`
             })
         },
 
         // 外卖点餐
         takeOutFood(){
             wx.navigateTo({
-                url: `/pages/demo/demo`
+                url: `/pages/commodit/index?type=waimai`
             })
         },
 

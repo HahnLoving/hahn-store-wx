@@ -1,5 +1,5 @@
 <view class="l-class container-count">
-  <view class="symbol {{result<=min|| disabled?'disabled l-disabled-class':'abled l-symbol-class'}}" catchtap="{{result<=min|| disabled?'doNothing':'reduceTap'}}" data-type="overflow_min" hover-class="{{isHover?'count-hover':''}}">
+  <view class="symbol {{result<=min|| disabled?'disabled l-disabled-class1':'abled l-symbol-class1'}}" catchtap="{{result<=min|| disabled?'doNothing':'reduceTap'}}" data-type="overflow_min" hover-class="{{isHover?'count-hover':''}}">
     <view class="l-icon l-icon-reduce" style="font-size:{{iconSize}};color:{{iconColor}}"></view>
   </view>
   <input wx:if="{{focus}}" class="l-count-class count" disabled="{{disabled}}" type="number" focus="{{focus}}" value="{{result}}" bindblur="onBlur"/>

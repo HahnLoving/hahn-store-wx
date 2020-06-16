@@ -1,0 +1,99 @@
+<l-search-bar l-class="search" placeholder="搜索" show-cancel="{{false}}"/>
+<view style='height:{{height}}px'>
+    <!-- 菜单 -->
+    <view class='menu' style='height:{{height}}px'>
+
+        <!-- 左右联动 -->
+        <view class='scroll'>
+            <!-- 左 -->
+            <scroll-view class='scroll-left' scroll-with-animation="true" scroll-y="true" style="height:{{height}}px"
+                         scroll-top="{{leftToTop}}">
+                <view style="padding-bottom: 300rpx;">
+                    <view scroll-left-text wx:for="{{constants}}" wx:key="id" bindtap="left" data-id="{{item.id}}"
+                          class='{{item.id === currentLeftSelect ?"scroll-left-text-active":"scroll-left-text"}}'>
+                        <view class="line"></view>
+                        <view class="text">
+                            <view id="{{item.id}}">
+                                {{item.title}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+
+            <!-- 右 -->
+            <scroll-view scroll-with-animation="true" scroll-y="true" style="height:{{height}}px" bindscroll="right"
+                         scroll-into-view="{{toView}}" class='scroll-right'>
+                <view style="padding-bottom: 300rpx;">
+                    <view wx:for="{{constants}}" wx:for-index='parentIndex' wx:key="id" id="{{item.id}}">
+                        <view class="scroll-right-top">
+                            <view class="scroll-right-top-text">{{item.title}}</view>
+                        </view>
+                        <view class="scroll-right-view" wx:for="{{item.items}}" wx:key="id">
+                            <!--                            <view>{{item.title}}</view>-->
+
+                            <l-card type="primary" l-class="card" l-img-class="right-card" position="left"
+                                    l-title-class="right-title-card" bindtap="commoditTap" data-item="{{item}}"
+                                    image="{{item.img}}" title="{{item.title}}">
+                                <view class="content" catchtap="commoditTap" data-item="{{item}}"
+                                      hover-stop-propagation="true">
+                                    {{item.subtitle}}
+                                </view>
+                                <l-tag catchtap="commoditTap" catchtap="commoditTap" data-item="{{item}}"
+                                       hover-stop-propagation="true"
+                                       disable="{{true}}" l-class="tag"
+                                       shape="square">{{item.tags}}
+                                </l-tag>
+
+                                <view class="more" hover-stop-propagation="true" catchtap="moreTap">
+                                    <view class="price-box">
+                                        <l-price wx:if="{{item.sku_list.length == 1}}" unit="￥" value="{{item.sku_list[0].price}}"
+                                                 color="#ff8040"></l-price>
+                                        <l-price wx:else unit="￥" value="{{item.price}}"
+                                                 color="#ff8040"></l-price>
+                                        <view class="price">/单位</view>
+                                    </view>
+
+
+                                    <l-counter
+                                            wx:if="{{item.sku_list.length == 1}}"
+                                            bind:lintap="countTap"
+                                            l-symbol-class="add-tap-btn"
+                                            l-disabled-class="add-no-tap-btn"
+                                            l-symbol-class1="{{count>0?'remove-tap-btn':'remove-tap-btn1'}}"
+                                            l-disabled-class1="{{count>0?'remove-tap-btn':'remove-tap-btn1'}}"
+                                            l-count-class="{{count>0?'count-tap':'count-tap1'}}"
+                                            count="0"
+                                            min="0"
+                                            max="10"/>
+
+
+                                    <l-button wx:else width="80" height="50" catchtap="tagTap" data-item="{{item}}"
+                                              shape="semicircle" bg-color="#166546" l-label-class="label-btn"
+                                              size="mini"
+                                              hover-stop-propagation="true">
+                                        选规格
+                                    </l-button>
+
+
+                                </view>
+
+                            </l-card>
+
+                        </view>
+                    </view>
+                </view>
+
+            </scroll-view>
+        </view>
+
+    </view>
+
+
+    <z-popup wx:if="{{isShowCommodit}}" bind:commoditTap="commoditTap" popup-data="{{popupData}}"></z-popup>
+    <z-spec wx:if="{{isShowSpec}}" bind:tagTap="tagTap" popup-data="{{popupData}}"></z-spec>
+    <z-cat wx:if="{{isCat}}"></z-cat>
+
+</view>
+
+

@@ -47,6 +47,7 @@
             <l-list bindtap="catlTap" title="购物车" icon="order" l-icon-class="icon"/>
             <l-list bindtap="orderTap" title="收货地址" icon="address" l-icon-class="icon"/>
             <l-list bindtap="vipTap" title="会员" icon="user" l-icon-class="icon"/>
+            <l-list bindtap="vipTap" title="关于我们" icon="favor" l-icon-class="icon"/>
 
         </l-card>
 

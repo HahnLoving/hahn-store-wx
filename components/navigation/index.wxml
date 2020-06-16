@@ -4,7 +4,7 @@
           style="padding-top:{{paddingTop}}px;height:{{height}}px;line-height:{{height}}px;">
         <view class="style-simple" wx:if="{{backStyle==='simple'}}">
 			<view class="hahn-store icon-fanhui" bind:tap="navigateBack"></view>
-			<view class="hahn-store back-home" wx:if="{{showHomeButton}}" style="" bind:tap="navigateBackHome">首页</view>
+<!--			<view class="hahn-store back-home" wx:if="{{showHomeButton}}" style="" bind:tap="navigateBackHome">首页</view>-->
         </view>
         <view class="style-normal {{navigationBarTextStyle}}" wx:if="{{backStyle==='normal'}}">
 			<view class="hahn-store icon-fanhui" bind:tap="navigateBack"></view>
@@ -15,6 +15,7 @@
         </view>
     </view>
     <view class="title">{{title!='none'?title:''}}</view>
+    <slot></slot>
 </view>
 <view class="navigation-bar-holder" wx:if="{{fixed && show}}"
       style="background:{{placeholderBg}};padding-top:{{paddingTop}}px;height:{{height}}px;line-height:{{height}}px;width:750rpx;"></view>
