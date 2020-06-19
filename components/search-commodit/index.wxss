@@ -1,23 +1,7 @@
 .search {
     margin-top: 5px;
     width: 750rpx;
-    height: 35px;
-}
-
-.search-box{
-    /*margin-top: 5px;*/
-    width: 750rpx;
     height: 40px;
-    position: relative;
-}
-
-.search-son{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 750rpx;
-    height: 40px;
-    z-index: 999;
 }
 
 /* 菜单 */
@@ -31,86 +15,19 @@
     align-items: center;
 }
 
-.scroll-left {
-    width: 120rpx;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-}
-
-.scroll-left-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120rpx;
-    height: 60px;
-    color: gray;
-}
-
-
-.scroll-left-text-active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120rpx;
-    height: 60px;
-    background: white;
-    color: gray;
-    position: relative;
-}
-
-.text {
-    width: 80rpx;
-    height: 60px;
-    font-size: 27rpx;
-    word-break: break-all;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.text .box{
-    position: relative;
-}
-
-.text .box .num{
-    position: absolute;
-    top: -30rpx;
-    right: -23rpx;
-    height: 35rpx;
-    line-height: 35rpx;
-    border-radius: 17.5rpx;
-    padding-left: 13rpx;
-    padding-right: 13rpx;
-    text-align: center;
-    background-color: #ff8040;
-    color: white;
-    font-size: 25rpx;
-}
-
-
-.scroll-left-text-active .line {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 5rpx;
-    background-color: #166546;
-}
 
 .scroll-right {
-    width: 630rpx;
+    width: 750rpx;
 }
 
 .scroll-right-top {
-    width: 630rpx;
+    width: 750rpx;
     height: 30px;
 }
 
 .scroll-right-top-text {
     margin-left: 30rpx;
-    width: 600rpx;
+    width: 690rpx;
     height: 30px;
     line-height: 30px;
     font-size: 25rpx;
@@ -119,7 +36,7 @@
 }
 
 .scroll-right-view {
-    width: 630rpx;
+    width: 690rpx;
     height: 140px;
     display: flex;
     align-items: center;
@@ -127,7 +44,7 @@
 
 .scroll-right-view .card {
     margin-left: 30rpx;
-    width: 590rpx;
+    width: 690rpx;
     height: 125px;
 }
 

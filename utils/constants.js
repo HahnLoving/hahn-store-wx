@@ -11,9 +11,11 @@ const constants = [
     {
         "id": "id1",
         "title": "分类1",
+        "num":0,
         "items": [
             {
-                "id": 1,
+                "id": 10000,
+                "num":0,
                 "title": "青锋大碗",
                 "subtitle": "大碗主要用来盛宽面，凡凡倾情推荐",
                 "category_id": 28,
@@ -30,7 +32,7 @@ const constants = [
                 "for_theme_img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
                 "sku_list": [
                     {
-                        "id": 1,
+                        "id": 10001,
                         "price": 13.8,
                         "discount_price": 0.01,
                         "online": true,
@@ -59,7 +61,7 @@ const constants = [
                         "actual_price": 0.01
                     },
                     {
-                        "id": 9,
+                        "id": 10002,
                         "price": 16.6,
                         "discount_price": null,
                         "online": true,
@@ -88,12 +90,12 @@ const constants = [
                         "actual_price": 16.6
                     },
                     {
-                        "id": 3,
+                        "id": 10003,
                         "price": 15.8,
                         "discount_price": 0.01,
                         "online": true,
                         "img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
-                        "title": "青峰·7英寸",
+                        "title": "青峰1·7英寸",
                         "spu_id": 1,
                         "code": "1$1-10#2-5",
                         "stock": 24,
@@ -132,7 +134,8 @@ const constants = [
                 "spu_detail_img_list": []
             },
             {
-                "id": 2,
+                "id": 11000,
+                "num":0,
                 "title": "青锋大碗",
                 "subtitle": "大碗主要用来盛宽面，凡凡倾情推荐",
                 "category_id": 28,
@@ -149,7 +152,7 @@ const constants = [
                 "for_theme_img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
                 "sku_list": [
                     {
-                        "id": 3,
+                        "id": 11001,
                         "price": 13.8,
                         "discount_price": 0.01,
                         "online": true,
@@ -178,7 +181,7 @@ const constants = [
                         "actual_price": 0.01
                     },
                     {
-                        "id": 4,
+                        "id": 11002,
                         "price": 16.6,
                         "discount_price": null,
                         "online": true,
@@ -226,9 +229,11 @@ const constants = [
     {
         "id": "id2",
         "title": "分类2",
+        "num":0,
         "items": [
             {
-                "id": 1,
+                "id": 20000,
+                "num":0,
                 "title": "青锋大碗",
                 "subtitle": "大碗主要用来盛宽面，凡凡倾情推荐",
                 "category_id": 28,
@@ -245,7 +250,7 @@ const constants = [
                 "for_theme_img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
                 "sku_list": [
                     {
-                        "id": 5,
+                        "id": 20001,
                         "price": 13.8,
                         "discount_price": 0.01,
                         "online": true,
@@ -289,7 +294,8 @@ const constants = [
                 "spu_detail_img_list": []
             },
             {
-                "id": 4,
+                "id": 21000,
+                "num":0,
                 "title": "青锋大碗",
                 "subtitle": "大碗主要用来盛宽面，凡凡倾情推荐",
                 "category_id": 28,
@@ -306,7 +312,7 @@ const constants = [
                 "for_theme_img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
                 "sku_list": [
                     {
-                        "id": 6,
+                        "id": 21001,
                         "price": 13.8,
                         "discount_price": 0.01,
                         "online": true,
@@ -335,7 +341,7 @@ const constants = [
                         "actual_price": 0.01
                     },
                     {
-                        "id": 7,
+                        "id": 21002,
                         "price": 16.6,
                         "discount_price": null,
                         "online": true,
@@ -379,7 +385,8 @@ const constants = [
                 "spu_detail_img_list": []
             },
             {
-                "id": 8,
+                "id": 22000,
+                "num":0,
                 "title": "青锋大碗",
                 "subtitle": "大碗主要用来盛宽面，凡凡倾情推荐",
                 "category_id": 28,
@@ -396,7 +403,7 @@ const constants = [
                 "for_theme_img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
                 "sku_list": [
                     {
-                        "id": 9,
+                        "id": 22001,
                         "price": 13.8,
                         "discount_price": 0.01,
                         "online": true,
@@ -425,7 +432,7 @@ const constants = [
                         "actual_price": 0.01
                     },
                     {
-                        "id": 10,
+                        "id": 22002,
                         "price": 16.6,
                         "discount_price": null,
                         "online": true,
@@ -467,15 +474,79 @@ const constants = [
                     }
                 ],
                 "spu_detail_img_list": []
-            }
+            },
+            {
+                "id": 23000,
+                "num":0,
+                "title": "青锋大碗",
+                "subtitle": "大碗主要用来盛宽面，凡凡倾情推荐",
+                "category_id": 28,
+                "root_category_id": 27,
+                "online": true,
+                "price": "12.99",
+                "sketch_spec_id": 1,
+                "default_sku_id": null,
+                "img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
+                "discount_price": "11.11",
+                "description": null,
+                "tags": "林白推荐",
+                "is_test": true,
+                "for_theme_img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
+                "sku_list": [
+                    {
+                        "id": 23001,
+                        "price": 13.8,
+                        "discount_price": 0.01,
+                        "online": true,
+                        "img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
+                        "title": "青峰·7英寸",
+                        "spu_id": 1,
+                        "code": "1$1-1#2-5",
+                        "stock": 24,
+                        "category_id": 28,
+                        "root_category_id": 27,
+                        "specs": [
+                            {
+                                "key_id": 1,
+                                "key": "颜色",
+                                "value_id": 1,
+                                "value": "青蓝色"
+                            },
+                            {
+                                "key_id": 2,
+                                "key": "尺寸",
+                                "value_id": 5,
+                                "value": "7英寸"
+                            }
+                        ],
+                        "num": 0,
+                        "actual_price": 0.01
+                    }
+                ],
+                "spu_img_list": [
+                    {
+                        "id": 138,
+                        "img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
+                        "spu_id": 1
+                    },
+                    {
+                        "id": 139,
+                        "img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
+                        "spu_id": 1
+                    }
+                ],
+                "spu_detail_img_list": []
+            },
         ]
     },
     {
         "id": "id3",
         "title": "分类3",
+        "num":0,
         "items": [
             {
-                "id": 11,
+                "id": 30000,
+                "num":0,
                 "title": "青锋大碗",
                 "subtitle": "大碗主要用来盛宽面，凡凡倾情推荐",
                 "category_id": 28,
@@ -492,7 +563,7 @@ const constants = [
                 "for_theme_img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
                 "sku_list": [
                     {
-                        "id": 12,
+                        "id": 30001,
                         "price": 13.8,
                         "discount_price": 0.01,
                         "online": true,
@@ -536,7 +607,8 @@ const constants = [
                 "spu_detail_img_list": []
             },
             {
-                "id": 13,
+                "id": 31000,
+                "num":0,
                 "title": "青锋大碗",
                 "subtitle": "大碗主要用来盛宽面，凡凡倾情推荐",
                 "category_id": 28,
@@ -553,7 +625,7 @@ const constants = [
                 "for_theme_img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
                 "sku_list": [
                     {
-                        "id": 14,
+                        "id": 31001,
                         "price": 13.8,
                         "discount_price": 0.01,
                         "online": true,
@@ -582,7 +654,7 @@ const constants = [
                         "actual_price": 0.01
                     },
                     {
-                        "id": 15,
+                        "id": 31002,
                         "price": 16.6,
                         "discount_price": null,
                         "online": true,
@@ -626,7 +698,8 @@ const constants = [
                 "spu_detail_img_list": []
             },
             {
-                "id": 16,
+                "id": 32000,
+                "num":0,
                 "title": "青锋大碗",
                 "subtitle": "大碗主要用来盛宽面，凡凡倾情推荐",
                 "category_id": 28,
@@ -643,7 +716,7 @@ const constants = [
                 "for_theme_img": "http://image.biaobaiju.com/uploads/20190807/11/1565150295-tzKZnFVJTg.jpeg",
                 "sku_list": [
                     {
-                        "id": 17,
+                        "id": 32001,
                         "price": 13.8,
                         "discount_price": 0.01,
                         "online": true,
@@ -672,7 +745,7 @@ const constants = [
                         "actual_price": 0.01
                     },
                     {
-                        "id": 18,
+                        "id": 32002,
                         "price": 16.6,
                         "discount_price": null,
                         "online": true,
@@ -720,9 +793,11 @@ const constants = [
     {
         "id": "id4",
         "title": "分类4",
+        "num":0,
         "items": [
             {
-                "id": 100,
+                "id": 40000,
+                "num":0,
                 "title": "林间有风自营针织衫",
                 "subtitle": "秋日冬款，浪漫满屋",
                 "category_id": 12,
@@ -739,7 +814,7 @@ const constants = [
                 "for_theme_img": "http://q9c36wjwt.bkt.clouddn.com/1.jpg",
                 "sku_list": [
                     {
-                        "id": 2,
+                        "id": 40001,
                         "price": 77.76,
                         "discount_price": null,
                         "online": true,
@@ -770,10 +845,11 @@ const constants = [
                                 "value": "小号 S"
                             }
                         ],
+                        "num": 0,
                         "actual_price": 77.76
                     },
                     {
-                        "id": 3,
+                        "id": 40002,
                         "price": 66,
                         "discount_price": 59,
                         "online": true,
@@ -804,10 +880,11 @@ const constants = [
                                 "value": "中号 M"
                             }
                         ],
+                        "num": 0,
                         "actual_price": 59
                     },
                     {
-                        "id": 4,
+                        "id": 40003,
                         "price": 88,
                         "discount_price": null,
                         "online": true,
@@ -838,10 +915,11 @@ const constants = [
                                 "value": "大号  L"
                             }
                         ],
+                        "num": 0,
                         "actual_price": 88
                     },
                     {
-                        "id": 5,
+                        "id": 40004,
                         "price": 77,
                         "discount_price": 59,
                         "online": true,
@@ -872,6 +950,7 @@ const constants = [
                                 "value": "小号 S"
                             }
                         ],
+                        "num": 0,
                         "actual_price": 59
                     }
                 ],

@@ -119,6 +119,6 @@
     margin-right: 20rpx !important;
     margin-top: 15rpx !important;
     min-width: 100rpx !important;
-    border: 1rpx dashed #f1f1f1 !important;
+    border: 1rpx dashed #8a8a8a !important;
     font-size: 27rpx !important;
 }

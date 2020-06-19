@@ -1,8 +1,4 @@
-
-<view class="search-box">
-    <l-search-bar l-class="search" placeholder="点击搜索" show-cancel="{{false}}"/>
-    <view class="search-son" bindtap="searchTap"></view>
-</view>
+<l-search-bar l-class="search" placeholder="请输入商品名字" bind:linchange="searchTap" show-cancel="{{false}}"/>
 <view style='height:{{height}}px'>
     <!-- 菜单 -->
     <view class='menu' style='height:{{height}}px'>
@@ -10,30 +6,32 @@
         <!-- 左右联动 -->
         <view class='scroll'>
             <!-- 左 -->
-            <scroll-view class='scroll-left' scroll-with-animation="true" scroll-y="true" style="height:{{height}}px"
-                         scroll-top="{{leftToTop}}">
-                <view style="padding-bottom: 300rpx;">
-                    <view scroll-left-text wx:for="{{constants}}" wx:key="id"
-                          class='{{item.id === currentLeftSelect ?"scroll-left-text-active":"scroll-left-text"}}'>
-                        <view class="line"></view>
-                        <view class="text" bindtap="left" data-id="{{item.id}}">
-                            <view class="box" id="{{item.id}}">
-                                {{item.title}}
-                                <view wx:if="{{item.num > 0}}" class="num">{{item.num}}</view>
-                            </view>
-                        </view>
-                    </view>
-                </view>
-            </scroll-view>
+<!--            <scroll-view class='scroll-left' scroll-with-animation="true" scroll-y="true" style="height:{{height}}px"-->
+<!--                         scroll-top="{{leftToTop}}">-->
+<!--                <view style="padding-bottom: 300rpx;">-->
+<!--                    <view scroll-left-text wx:for="{{constants}}" wx:key="id"-->
+<!--                          class='{{item.id === currentLeftSelect ?"scroll-left-text-active":"scroll-left-text"}}'>-->
+<!--                        <view class="line"></view>-->
+<!--                        <view class="text" bindtap="left" data-id="{{item.id}}">-->
+<!--                            <view class="box" id="{{item.id}}">-->
+<!--                                {{item.title}}-->
+<!--                                <view wx:if="{{item.num > 0}}" class="num">{{item.num}}</view>-->
+<!--                            </view>-->
+<!--                        </view>-->
+<!--                    </view>-->
+<!--                </view>-->
+<!--            </scroll-view>-->
 
             <!-- 右 -->
-            <scroll-view scroll-with-animation="true" scroll-y="true" style="height:{{height}}px" bindscroll="right"
-                         scroll-into-view="{{toView}}" class='scroll-right'>
+<!--            bindscroll="right"-->
+<!--            scroll-into-view="{{toView}}"-->
+            <scroll-view scroll-with-animation="true" scroll-y="true" style="height:{{height}}px"
+                          class='scroll-right'>
                 <view style="padding-bottom: 300rpx;">
                     <view wx:for="{{constants}}" wx:for-index='parentIndex' wx:key="id" id="{{item.id}}">
-                        <view class="scroll-right-top">
-                            <view class="scroll-right-top-text">{{item.title}}</view>
-                        </view>
+<!--                        <view class="scroll-right-top">-->
+<!--                            <view class="scroll-right-top-text">{{item.title}}</view>-->
+<!--                        </view>-->
                         <view class="scroll-right-view" wx:for="{{item.items}}" wx:for-item="value" wx:key="id">
 
                             <l-card type="primary" l-class="card" l-img-class="right-card" position="left"

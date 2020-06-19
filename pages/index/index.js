@@ -1,5 +1,7 @@
 //index.js
 //获取应用实例
+import {Cat} from "../../model/Cat";
+
 const app = getApp()
 
 Page({
@@ -125,6 +127,11 @@ Page({
             wx.lin.hideLoading()
             clearTimeout(timer)
         }, 0.5 * 1000)
+    },
+
+    onShow() {
+        const cat = new Cat()
+        cat.clearData()
     },
 
     onPageScroll(e) {
